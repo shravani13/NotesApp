@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utilities.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>NoteIt</h2>
+            <span class="material-symbols-outlined pad-btn">
+                description
+            </span>
+            <li>
+                <ul><a href="./index.html">Home</a></ul>
+                <ul><a href="./archive.html">Archive</a></ul>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <div class="input-container">
+            <textarea name="title" class="input-title" placeholder="Title" rows="2" cols="30"></textarea>
+            <textarea name="notes" class="input-notes" placeholder="Make a note" rows="15" cols="30"></textarea>
+            <button class="add-btn" type="submit">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </button>
+        </div>
+        <div class="notes-container">
+            <p class="show-tag">Pinned</p>
+            <div class="pinned-notes-container"></div>
+            <p class="show-tag">Notes</p>
+            <div class="other-notes-container"></div>
+        </div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
